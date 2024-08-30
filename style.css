@@ -1,0 +1,72 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #fff;
+    background-color: #000; /* Space background */
+}
+
+.pimg1, .pimg2, .pimg3 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100%;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 800px; /* Depth perspective */
+    transition: transform 2s ease, opacity 2s ease;
+    opacity: 0.9;
+}
+
+.pimg1:hover, .pimg2:hover, .pimg3:hover {
+    transform: rotateX(10deg) rotateY(10deg) scale(1.1);
+    opacity: 1;
+}
+
+.pimg1 {
+    background-image: url(images/image1.jpg); /* Original image path 1 */
+}
+
+.pimg2 {
+    background-image: url(images/image2.webp); /* Original image path 2 */
+}
+
+.pimg3 {
+    background-image: url(images/image3.jpeg); /* Original image path 3 */
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.textBg {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.7);
+}
+
+.section {
+    padding: 100px 100px;
+    text-align: center;
+    color: #fff;
+}
+
+.section-light {
+    background-color: #222;
+    color: white;
+}
